@@ -31,7 +31,7 @@ class Book extends StatelessWidget {
           ),
         ),
         Transform(
-          transform: Matrix4(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+          transform: Matrix4.identity()
             ..rotateY(appliedAngleRadians)
             ..setEntry(3, 0, sin(appliedAngleRadians) * .0005),
           alignment: Alignment.centerRight,
